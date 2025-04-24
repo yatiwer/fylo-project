@@ -11,10 +11,10 @@
 </head>
 <body>
   <header>
-      Features
-      Team
-      Sign In
-      <img src="./images/logo.svg" alt="logo">
+     <a href="">Features</a> 
+     <a href="">Team</a> 
+     <a href="">Sign In</a>
+    <img src="./images/logo.svg" alt="logo">
   </header>
   
   <main>
@@ -26,6 +26,7 @@
       family, and co-workers.
 
       Get Started
+      <img src="./images/illustration-1.svg" alt="illustration-1">
     </section>
     <section>
       Stay productive, wherever you are
@@ -43,15 +44,25 @@
 
       Kyle Burton
       Founder & CEO, Huddle
+      <img src="./images/illustration-2.svg" alt="illustration-2">
     </section>
-    <section>
-      Get early access today
-
-      It only takes a minute to sign up and our free starter tier is extremely generous. 
-      If you have any questions, our support team would be happy to help you.
-
-      Get Started For Free
-    </section>
+    //
+    <section class="bg-indigo-900 text-white py-16">
+      <div class="container mx-auto px-6 text-center md:text-left">
+          <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-80">
+              <div>
+                  <h2 class="text-2xl md:text-3xl font-bold mb-4 relative right-40">Get early access today</h2>
+                  <p class=" w-2xl wrap-normal relative right-40">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+              </div>
+              <div>
+                  <div class="flex flex-col gap-4">
+                      <input type="email" placeholder="email@example.com" class="px-4 py-3 rounded bg-white text-gray-800 w-150">
+                      <button class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded font-bold cursor-pointer">Get Started For Free</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
   </main>
     <footer>
       Phone: +1-543-123-4567
