@@ -15,11 +15,15 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header>
-      <a href="">Features</a>
-      <a href="">Team</a>
-      <a href="">Sign In</a>
-      <img src="./images/logo.svg" alt="logo" />
+    <header class="flex justify-between py-5 px-15">
+      <a href=""><img src="./images/logo.svg" alt="logo" class="w-28" /></a>
+      <nav>
+        <ul class="flex gap-7">
+          <li><a href="">Features</a></li>
+          <li><a href="">Team</a></li>
+          <li><a href="">Sign In</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -113,9 +117,32 @@
         </div>
       </section>
     </main>
-    <footer>
-      Phone: +1-543-123-4567 example@fylo.com About Us Jobs Press Blog Contact
-      Us Terms Privacy
+    <footer class="grid grid-cols-3 bg-indigo-950 py-10 px-10 h-60">
+      <section class="text-white">
+        <a href=""><img src="./images/logo.svg" alt="logo" class="text-white"/></a>
+        <div class="flex gap-4 py-5">
+          <img src="./images/icon-phone.svg" alt="phone"/>
+          <a href="tel:09135653112">Phone: +1-543-123-4567</a>
+        </div>
+        <div class="flex gap-4">
+          <img src="./images/icon-email.svg" alt="email"/>
+          <a href="zahrabayat367@gmail.com">example@fylo.com</a>
+        </div>
+      </section>
+      <ul class="grid grid-cols-2 grid-rows-4 gap-x-30 text-white p-15">
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Jobs</a></li>
+        <li><a href="">Terms</a></li>
+        <li><a href="">Prees</a></li>
+        <li><a href="">Privacy</a></li>
+        <li><a href="">Blog</a></li>
+      </ul>
+      <div class="flex gap-2 text-white p-15">
+        <a href="">Facebook</a>
+        <a href="">Twitter</a>
+        <a href="">Instagram</a>
+      </div>
     </footer>
   </body>
 </html>
