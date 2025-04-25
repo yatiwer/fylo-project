@@ -1,82 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <title>Frontend Mentor | Fylo landing page with two column layout</title>
-  <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-  <header>
-     <a href="">Features</a> 
-     <a href="">Team</a> 
-     <a href="">Sign In</a>
-    <img src="./images/logo.svg" alt="logo">
-  </header>
-  
-  <main>
-    <section>
-      All your files in one secure location, accessible anywhere.
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="">Features</a>
+      <a href="">Team</a>
+      <a href="">Sign In</a>
+      <img src="./images/logo.svg" alt="logo" />
+    </header>
 
-      Fylo stores your most important files in one secure location. 
-      Access them wherever you need, share and collaborate with friends, 
-      family, and co-workers.
+    <main>
+      <section>
+        All your files in one secure location, accessible anywhere. Fylo stores
+        your most important files in one secure location. Access them wherever
+        you need, share and collaborate with friends, family, and co-workers.
+        Get Started
+        <img src="./images/illustration-1.svg" alt="illustration-1" />
+      </section>
+      <section
+        class="bg-[url(./images/bg-curve-desktop.svg)] bg-cover w-full bg-no-repeat relative bg-center pt-36 pb-36"
+      >
+        <div class="stay-productive flex gap-60 items-center">
+          <div class="stay-productive__title flex-1 ml-20 max-w-196">
+            <h1 class="text-blue-800 text-4xl font-bold h-20">
+              Stay productive, wherever you are
+            </h1>
+            <p class="text-blue-950 text-lg">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs. Securely share
+              files and folders with friends, family and colleagues for live
+              collaboration. No email attachments required!
+            </p>
+            <p class="mt-3 mb-3 h-10 text-green-500 underline text-lg">
+              See how Fylo works
+            </p>
 
-      Get Started
-      <img src="./images/illustration-1.svg" alt="illustration-1">
-    </section>
-    <section>
-      Stay productive, wherever you are
-
-      Never let location be an issue when accessing your files. Fylo has you 
-      covered for all of your file storage needs.
-
-      Securely share files and folders with friends, family and colleagues for 
-      live collaboration. No email attachments required!
-
-      See how Fylo works
-
-      Fylo has improved our team productivity by an order of magnitude. Since 
-      making the switch our team has become a well-oiled collaboration machine.
-
-      Kyle Burton
-      Founder & CEO, Huddle
-      <img src="./images/illustration-2.svg" alt="illustration-2">
-    </section>
-    //
-    <section class="bg-indigo-900 text-white py-16">
-      <div class="container mx-auto px-6 text-center md:text-left">
-          <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-80">
-              <div>
-                  <h2 class="text-2xl md:text-3xl font-bold mb-4 relative right-40">Get early access today</h2>
-                  <p class=" w-2xl wrap-normal relative right-40">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+            <div
+              class="stay-productive__subtitle flex-1 font-normal text-blue-950 text-lg bg-white max-w-md p-10 shadow-lg rounded-lg"
+            >
+              <p>
+                <img class="pb-4" src="./images/icon-quotes.svg" alt="" />
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </p>
+              <div
+                class="profile flex flex-wrap justify-start items-center gap-2 mt-6"
+              >
+                <img
+                  class="rounded-full max-w-9"
+                  src="./images/avatar-testimonial.jpg"
+                  alt=""
+                />
+                <p class="font-medium text-sm">
+                  Kyle Burton<span class="block font-extralight"></span>Founder
+                  & CEO, Huddle
+                </p>
               </div>
-              <div>
-                  <div class="flex flex-col gap-4">
-                      <input type="email" placeholder="email@example.com" class="px-4 py-3 rounded bg-white text-gray-800 w-150">
-                      <button class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded font-bold cursor-pointer">Get Started For Free</button>
-                  </div>
-              </div>
+            </div>
           </div>
-      </div>
-  </section>
-  </main>
+          <div class="stay-productive__image flex-1">
+            <img
+              class="max-w-2xl"
+              src="./images/illustration-2.svg"
+              alt="illustration-2"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-indigo-900 text-white py-16">
+        <div class="container mx-auto px-6 text-center md:text-left">
+          <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-80">
+            <div>
+              <h2 class="text-2xl md:text-3xl font-bold mb-4 relative right-40">
+                Get early access today
+              </h2>
+              <p class="w-2xl wrap-normal relative right-40">
+                It only takes a minute to sign up and our free starter tier is
+                extremely generous. If you have any questions, our support team
+                would be happy to help you.
+              </p>
+            </div>
+            <div>
+              <div class="flex flex-col gap-4">
+                <input
+                  type="email"
+                  placeholder="email@example.com"
+                  class="px-4 py-3 rounded bg-white text-gray-800 w-150"
+                />
+                <button
+                  class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded font-bold cursor-pointer"
+                >
+                  Get Started For Free
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
-      Phone: +1-543-123-4567
-      example@fylo.com
-
-      About Us
-      Jobs
-      Press
-      Blog
-
-      Contact Us
-      Terms
-      Privacy
+      Phone: +1-543-123-4567 example@fylo.com About Us Jobs Press Blog Contact
+      Us Terms Privacy
     </footer>
- 
-</body>
+  </body>
 </html>
